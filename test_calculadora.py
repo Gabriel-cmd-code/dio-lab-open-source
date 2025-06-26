@@ -1,0 +1,1 @@
+import unittest\nfrom calculadora import somar\n\nclass TestCalculadora(unittest.TestCase):\n    def test_soma(self):\n        self.assertEqual(somar(2, 3), 5)\n        self.assertEqual(somar(-1, 1), 0)\n        self.assertEqual(somar(0, 0), 0)\n\nif __name__ == "__main__":\n    unittest.main()
